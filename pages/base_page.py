@@ -26,3 +26,8 @@ class BasePage:
         """input text to element"""
         inp_text = self.browser.find_element(how, what)
         inp_text.send_keys(text)
+
+    def click_to_element(self, how, what):
+        """click to element"""
+        element = self.browser.find_element(how, what)
+        element.click()
