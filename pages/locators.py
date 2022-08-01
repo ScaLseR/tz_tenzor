@@ -12,3 +12,4 @@ class MainPageLocators:
     SUGGEST = (By.CSS_SELECTOR, '.mini-suggest__popup.mini-suggest__popup_svg_yes.mini-suggest__popup_theme_tile')
     BTN_FIND = (By.CSS_SELECTOR, '.search2__button')
     REZ_FIND = (By.CSS_SELECTOR, '[aria-label="Результаты поиска"]')
+    FIRST_ELEMENT = (By.CSS_SELECTOR, '[accesskey="1"]')

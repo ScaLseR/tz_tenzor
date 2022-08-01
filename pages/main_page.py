@@ -9,17 +9,23 @@ class MainPage(BasePage):
         super(MainPage, self).__init__(*args, **kwargs)
 
     def find_search_field(self):
-        """find search field"""
+        """finds the search field"""
         return self.is_element_present(*MainPageLocators.FIND_FIELD)
 
     def input_text_to_search(self, text):
-        """inputting text to searching field"""
+        """enters text in the search field"""
         self.input_text_to_element(*MainPageLocators.FIND_FIELD, text)
 
     def find_suggest(self):
-        """find suggest"""
+        """finds suggest"""
         return self.is_element_present(*MainPageLocators.SUGGEST)
 
     def click_enter(self):
-        """find button "Найти" and then click"""
+        """finds the 'Найти' button and then clicks on it"""
         self.click_to_element(*MainPageLocators.BTN_FIND)
+
+    def first_link(self):
+        """finds the first link in the search results"""
+        first_element = self.find_element(*MainPageLocators.FIRST_ELEMENT)
+        link = first_element.get_attribute('href')
+        return link
