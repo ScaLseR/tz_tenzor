@@ -1,5 +1,4 @@
 """Base Page Module"""
-from .locators import BasePageLocators
 from selenium.common.exceptions import NoSuchElementException
 
 
