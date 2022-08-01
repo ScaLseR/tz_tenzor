@@ -33,4 +33,5 @@ def test_pictures(browser):
     image_page.open_first_img()
     assert image_page.img_is_open(), 'Картинка не открылась'
     image_page.click_forward_btn()
-    sleep(10)
+    image_page.click_back_button()
+    sleep(30)
