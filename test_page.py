@@ -1,5 +1,6 @@
 """Test Cases Module"""
 from pages.main_page import MainPage
+from time import sleep
 
 _URL = 'https://yandex.ru'
 _TEXT = 'Тензор'
@@ -16,3 +17,11 @@ def test_search_in_ya(browser):
     page.click_enter()
     assert page.first_link() == _LINK, 'Первая ссылка не ведет на сайт tenzor.ru'
 
+
+def test_pictures(browser):
+    """test case finding images in the browser"""
+    page = MainPage(browser, _URL)
+    page.open()
+    assert page.find_picture_link(), 'Отсутствует ссылка "Картинки" на странице!'
+    page.click_to_picture_link()
+    sleep(30)

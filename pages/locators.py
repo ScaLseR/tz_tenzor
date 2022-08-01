@@ -9,3 +9,8 @@ class MainPageLocators:
     BTN_FIND = (By.CSS_SELECTOR, '.search2__button')
     REZ_FIND = (By.CSS_SELECTOR, '[aria-label="Результаты поиска"]')
     FIRST_ELEMENT = (By.CSS_SELECTOR, '[accesskey="1"]')
+    PICTURE_LINK = (By.CSS_SELECTOR, '[data-id="images"]')
+
+
+class ImagePageLocators:
+    """locators for ImagePage"""

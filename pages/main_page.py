@@ -29,3 +29,11 @@ class MainPage(BasePage):
         first_element = self.find_element(*MainPageLocators.FIRST_ELEMENT)
         link = first_element.get_attribute('href')
         return link
+
+    def find_picture_link(self):
+        """finds links to pictures"""
+        return self.is_element_present(*MainPageLocators.PICTURE_LINK)
+
+    def click_to_picture_link(self):
+        """ click to the pictures link"""
+        self.click_to_element(*MainPageLocators.PICTURE_LINK)
