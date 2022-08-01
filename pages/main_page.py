@@ -37,3 +37,4 @@ class MainPage(BasePage):
     def click_to_picture_link(self):
         """ click to the pictures link"""
         self.click_to_element(*MainPageLocators.PICTURE_LINK)
+        self.go_to_new_window()

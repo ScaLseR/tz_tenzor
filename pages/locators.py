@@ -14,3 +14,6 @@ class MainPageLocators:
 
 class ImagePageLocators:
     """locators for ImagePage"""
+    IMG_FST_CAT = (By.CSS_SELECTOR, '.PopularRequestList-Shadow')
+    FIND_FIELD = (By.CSS_SELECTOR, '.input__control.mini-suggest__input')
+    TITLE = (By.XPATH, '/html/head/meta[5]')

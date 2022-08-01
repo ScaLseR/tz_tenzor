@@ -35,3 +35,12 @@ class BasePage:
         """finds the link of the first element in the search results"""
         element = self.browser.find_element(how, what)
         return element
+
+    def go_to_new_window(self):
+        """go to new window in browser"""
+        new_window = self.browser.window_handles[1]
+        self.browser.switch_to.window(new_window)
+
+    def get_page_url(self):
+        """get current url"""
+        return self.browser.current_url
