@@ -1,6 +1,5 @@
 """Test Cases Module"""
 from pages.main_page import MainPage
-from time import sleep
 
 _URL = 'https://yandex.ru'
 _TEXT = 'Тензор'
