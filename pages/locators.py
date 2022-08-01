@@ -16,4 +16,8 @@ class ImagePageLocators:
     """locators for ImagePage"""
     IMG_FST_CAT = (By.CSS_SELECTOR, '.PopularRequestList-Shadow')
     FIND_FIELD = (By.CSS_SELECTOR, '.input__control.mini-suggest__input')
-    TITLE = (By.XPATH, '/html/head/meta[5]')
+    IMG_FST = (By.CSS_SELECTOR, '.serp-item__thumb.justifier__thumb')
+    FWD_BTN = (By.CSS_SELECTOR, '.CircleButton.CircleButton_type_next.CircleButton_type.'
+                                'MediaViewer-Button.MediaViewer-Button_hovered.MediaViewer_'
+                                'theme_fiji-Button.MediaViewer-ButtonNext.MediaViewer_theme_fiji-ButtonNext')
+    IMG_OPEN = (By.CSS_SELECTOR, '.MMImage-Origin')

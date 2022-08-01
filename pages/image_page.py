@@ -20,3 +20,16 @@ class ImagePage(BasePage):
         if len(category_name) > 0:
             return True
         return False
+
+    def open_first_img(self):
+        """opens the first image"""
+        self.click_to_element(*ImagePageLocators.IMG_FST)
+
+    def click_forward_btn(self):
+        """clicks forward button"""
+        self.click_to_element(*ImagePageLocators.FWD_BTN)
+
+    def img_is_open(self):
+        """check if the image is open"""
+        if self.is_element_present(*ImagePageLocators.IMG_OPEN):
+            return True
