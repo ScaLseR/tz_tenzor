@@ -1,7 +1,7 @@
 """test cases module"""
 from pages.main_page import MainPage
 from pages.image_page import ImagePage
-from time import sleep
+
 
 _BASE_URL = 'https://yandex.ru'
 _TEXT = 'тензор'
@@ -33,5 +33,6 @@ def test_pictures(browser):
     image_page.open_first_img()
     assert image_page.img_is_open(), 'Картинка не открылась'
     image_page.click_forward_btn()
+    assert not image_page.img_is_change(), 'Картинка не сменилась'
     image_page.click_back_button()
-    sleep(30)
+    assert image_page.img_is_change(), 'Картинка не совпадает с начальной'

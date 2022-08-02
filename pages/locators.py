@@ -23,4 +23,4 @@ class ImagePageLocators:
     PREV_BTN = (By.CSS_SELECTOR, '.CircleButton.CircleButton_type_prev.CircleButton_type.MediaViewer-'
                                  'Button.MediaViewer_theme_fiji-Button.MediaViewer-'
                                  'ButtonPrev.MediaViewer_theme_fiji-ButtonPrev')
-    IMG_OPEN = (By.CSS_SELECTOR, '.MMImage-Origin')
+    IMG_OPEN = (By.XPATH, '//div[@class="MMImageWrapper"]/img[@class="MMImage-Origin"]')
